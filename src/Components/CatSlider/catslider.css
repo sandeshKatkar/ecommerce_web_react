@@ -1,0 +1,8 @@
+.catSliderSection{width: 100%;}
+.catSliderSection h4{font-size: 40px; font-weight: 500;opacity: 0.7;padding: 5px;}
+.cat-slider-main .slick-slide{padding: 5px 10px  !important; }
+.cat-slider-main .item{height: auto;  background: #dbb1ce;display: flex;align-items: center;justify-content: center;flex-direction: column; border-radius: 5px;}
+.cat-slider-main .item .info{margin: auto;display: flex;align-items: center;justify-content: center;flex-direction: column;}
+.cat-slider-main .item .info img{width: 100% !important;}
+.cat-slider-main .item .info h4{font-size: 18px; font-weight: 600;}
+.cat-slider-main .item .info p{font-size: 14px; opacity: 0.8;line-height: 9px;}
