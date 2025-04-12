@@ -16,7 +16,9 @@ const Home=()=>{
         slidesToShow: 8,
         slidesToScroll: 1,
         fade:false,
-        arrow:true
+        arrow:true,
+        autoplay:3000,
+        centerMod:true
       };
     return(
         <>

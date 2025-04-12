@@ -10,6 +10,7 @@
 
 
 .cat-slider-main .item{height: auto;display: flex;align-items: center;justify-content: center;flex-direction: column; border-radius: 10px;}
+.cat-slider-main .item:hover{box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);}
 .cat-slider-main .item .info{margin: auto;display: flex;align-items: center;justify-content: center;flex-direction: column; border-radius: 10px;padding: 0px 15px;}
 .cat-slider-main .item .info img{width: 100% !important;}
 .cat-slider-main .item .info h4{font-size: 18px; font-weight: 600;}

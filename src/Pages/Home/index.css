@@ -1,9 +1,32 @@
 
-.homeProducts{padding: 25px 0; position: relative;}
-.homeProducts .filter-tab ul{position: absolute;right: 25px;top: 70px;}
+.homeProducts{padding: 0px 0; position: relative;}
+.homeProducts .filter-tab ul{position: absolute;right: 25px;top: 30px;}
 
-.homeProducts .filter-tab ul li{margin-left: 10px;cursor: pointer;}
+.homeProducts .filter-tab ul li{margin-left: 15px;cursor: pointer;}
 .homeProducts .filter-tab ul li a{text-decoration: none;color: black;font-size: 17px;transition: all 0.3s ease-in-out;position:relative; font-weight: 500;}
 .homeProducts .filter-tab ul li:hover a{color: #3bb77e;}
-.homeProducts .product-row{display: flex; padding:30px 0;flex-wrap: wrap;}
+.homeProducts .product-row{display: flex; padding:10px 0;flex-wrap: wrap;}
 .homeProducts .product-row .item{width: 20%;background-color: #ffff;padding:15px 15px;}
+
+.best-seller{height: 400px;margin-top: 20px;}
+.best-seller .banner{padding: 10px;}
+.best-seller .banner img{width: 100%;height: 100%;}
+.best-seller .H-slider .item{width: 100% !important; padding: 10px;}
+.best-seller .H-slider .slick-slider .slick-dots{bottom: 17px !important;visibility: hidden;}
+
+
+.best-seller .H-slider .slick-slider .slick-prev:before, .slick-next:before{
+    font-size: 35px !important;
+    opacity: 0.5 !important;
+    width: 15px !important;
+    height: 15px !important;
+}
+ .best-seller .H-slider .slick-slider .slick-arrow.slick-next{
+    right: 2.5%;
+    opacity: 0.5 !important;
+}
+/*
+.best-seller .H-slider .slick-slider .slick-arrow.slick-prev{
+   left: -2%;
+   
+} */
