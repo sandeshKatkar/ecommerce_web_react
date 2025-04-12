@@ -6,6 +6,7 @@ import "bootstrap/dist/js/bootstrap.bundle";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import Home from '../src/Pages/Home/index';
+import Link from '@mui/material/Link';
 
 function App() {
   return (

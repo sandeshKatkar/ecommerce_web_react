@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import '../slider/slider.css';
-import Image1 from '../../accets/images/slid1-1.jpg';
+import Image1 from '../../accets/images/slid1-1.jpeg';
 import Image2 from '../../accets/images/slid1-2.jpg';
 
 const Slider1=()=>{
@@ -21,7 +21,7 @@ const Slider1=()=>{
         <div className='Slider-1'>
             <div className='container-fluid'>
                 <Slider {...settings} className='slider-main'>
-                    <div className='item'>
+                     <div className='item'>
                         <img src={Image1} className='w-100'/>
                         <div className='info'>
                             <h2 className='mb-4'>Don't miss ammazing <br/> grocery deals</h2>
@@ -30,7 +30,7 @@ const Slider1=()=>{
                     </div>
                     <div className='item'>
                         <img src={Image2} className='w-100'/>
-                        <div className='info2'>
+                        <div className='info'>
                             <h2 className='mb-4'>Fresh Vegetables <br/> Big Discount </h2>
                             <p>Sign up for daily newsletter</p>
                         </div>

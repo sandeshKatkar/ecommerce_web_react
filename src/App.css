@@ -8,7 +8,7 @@ button{
   background: none;
 }
 .text-g{
-  color: #3bb77e;
+  color: #08b651;
 }
 .g-btn{
   border: none;
@@ -16,3 +16,5 @@ button{
   padding:8px 10px;
   
 }
+.heading{font-size: 40px; font-weight: 500;opacity: 0.7;padding: 05px;}
+.cursor{cursor: pointer;}

@@ -1,0 +1,9 @@
+
+.homeProducts{padding: 25px 0; position: relative;}
+.homeProducts .filter-tab ul{position: absolute;right: 25px;top: 70px;}
+
+.homeProducts .filter-tab ul li{margin-left: 10px;cursor: pointer;}
+.homeProducts .filter-tab ul li a{text-decoration: none;color: black;font-size: 17px;transition: all 0.3s ease-in-out;position:relative; font-weight: 500;}
+.homeProducts .filter-tab ul li:hover a{color: #3bb77e;}
+.homeProducts .product-row{display: flex; padding:30px 0;flex-wrap: wrap;}
+.homeProducts .product-row .item{width: 20%;background-color: #ffff;padding:15px 15px;}

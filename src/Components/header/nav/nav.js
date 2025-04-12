@@ -6,7 +6,7 @@ import IMG from '../../../accets/images/MMenu.jpg';
 const Nav=()=>{
     return(
         <>
-            <div className='nav d-flex align-items-center'>
+            <div className='nav d-flex align-items-center sticky-top'>
                 <div className='container-fluid'>
                     <div className='row position-relative'>
                         <div className='col-sm-3 part-1 d-flex align-items-center'>

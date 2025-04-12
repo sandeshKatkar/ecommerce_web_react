@@ -1,0 +1,4 @@
+.banner-main {padding:20px; margin-top: 15px;}
+.banner-main .box{border: 1px solid black; height:250px; border-radius: 10px; cursor:pointer;overflow: hidden;}
+.banner-main .box img{transition: all 0.8s ease-in-out; width: 100%;height: 100%;}
+.banner-main .box:hover img{transform: scale(1.07);}

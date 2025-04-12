@@ -113,7 +113,7 @@ header .headersearch .search i{
     right: 0;
     width: 170px;
     height:auto;
-    z-index: 100;
+    z-index: 10000;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),0  3px 6px rgba(0, 0, 0, 0.23);
     /* border: 1px solid black; */
 }
@@ -163,7 +163,7 @@ header .headersearch .search i{
 }
 .Ac-dropDown li:hover .setting-menu{
     left:-162px !important;
-    z-index: 100;       
+    z-index: 10000;       
     opacity: 1;
     visibility: visible;
 }

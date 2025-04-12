@@ -1,0 +1,36 @@
+.product-main{width: 100%;border: 1px solid rgba(0, 0, 0, 0.5);overflow: hidden;border-radius:10px;padding: 15px;position: relative;}
+.product-main:hover{box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);}
+.product-main img{width: 100%;transition: all 0.3s ease-in-out;}
+.product-main .img-wrapper{width: 100%;overflow: hidden;transition: all 0.4s ease-in-out;position: relative;}
+.product-main .img-wrapper:hover img{transform: scale(1.1);}
+
+.product-main .img-wrapper .overlay{position: absolute;width: 100%;height: 100%;left: 0;top: 0;display: flex;align-items: center;justify-content: center;padding: 25px;visibility: hidden !important;transition: all 0.3s ease-in-out;}
+
+.product-main .img-wrapper .overlay ul{transition: all 0.3s ease-in-out;width: 110px;height: auto;background-color: #ffffff;border-radius: 5px;margin-right: 0 !important;border: 1px solid #BCE3C9;opacity: 0.8;}
+.product-main .img-wrapper .overlay ul li{width:33.33%;height:100%;border-right: 1px solid #BCE3C9;text-align: center;padding: 5px;}
+.product-main .img-wrapper .overlay ul li:hover{color: #fff;background-color: #4ef084;opacity: 1;}
+.list-inline-item:not(:last-child) {
+    margin-right: 0;
+   
+}
+.product-main .img-wrapper:hover .overlay{visibility: visible !important;}
+ 
+.product-main .catName{font-size: 14px;color: #000;opacity: 0.8;}
+.product-main .title{margin: 10px 0 0 0;}
+.product-main .title a{font-size: 18px;color: #000;font-weight: 500;text-decoration: none;padding: 0 !important;line-height: 5px !important;}
+.product-main .brand a{text-decoration: none; font-size: 15px;color: #000;}
+.product-main .rating{font-size: 17px;}
+.product-main .price{font-size: 20px;margin-right: 10px;}
+.product-main .old-price{font-size: 15px;text-decoration: line-through;opacity: 0.8;}
+.product-main button{margin-left: auto;font-size: 14px;padding: 5px 12px !important;border-radius: 5px;background-color: rgba(118, 239, 96, 0.44);color:  #08b651;transition: all 0.4s ease-in-out;}
+.product-main button svg{font-size: 18px;margin-right: 3px;}
+.product-main button:hover{background-color:#08b651;color: #fff;}
+
+
+.product-main .tag .best{background-color: rgb(243, 174, 70);}
+.product-main .tag .New{background-color: rgb(23, 224, 50);}
+.product-main .tag .sale{background-color: rgb(53, 226, 238);}
+.product-main .tag .hot{background-color: rgb(238, 67, 147);}
+
+.product-main .tag p{font-size: 16px;margin: auto auto;text-align: center;font-weight: 500;border-bottom-right-radius: 10px;padding: 3px 0;}
+.product-main .tag{position:absolute;width: 70px;height: 30px;left: 0;top: 0;text-transform: capitalize;border-bottom-right-radius: 5px;}
