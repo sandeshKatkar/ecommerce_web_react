@@ -16,10 +16,10 @@ const Nav=()=>{
                             <nav>
                                 <ul className='list list-inline mb-0'>
                                     <li className='list-inline-item'>
-                                        <button><Link>Home</Link></button>
+                                        <button><Link to='/'>Home</Link></button>
                                     </li>
                                     <li className='list-inline-item'>
-                                        <button><Link>Shop</Link></button>
+                                        <button><Link to='/listing'>Shop</Link></button>
                                     </li>
                                     <li className='list-inline-item'>
                                         <button><Link>Vendor</Link></button>

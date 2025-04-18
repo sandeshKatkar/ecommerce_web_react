@@ -6,7 +6,9 @@ import "bootstrap/dist/js/bootstrap.bundle";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import Home from '../src/Pages/Home/index';
-import Link from '@mui/material/Link';
+
+import Listing from './Pages/Listing/listing';
+import Footer from './Components/footer/footer'
 
 function App() {
   return (
@@ -15,7 +17,9 @@ function App() {
       <Header/>
       <Routes>
         <Route exact={true} path='/' element={<Home/>}></Route>
+        <Route exact={true} path='/listing' element={<Listing/>}></Route>
       </Routes>
+      <Footer/>
     </BrowserRouter>
 
     </>

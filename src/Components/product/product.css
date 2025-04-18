@@ -20,8 +20,7 @@
 .product-main .title a{font-size: 16px;color: #000;font-weight: 500;text-decoration: none;padding: 0 !important;line-height: 5px !important;}
 .product-main .brand a{text-decoration: none; font-size: 15px;color: #000;}
 .product-main .rating{font-size: 15px;}
-.product-main .price{font-size: 18px;margin-right: 10px;}
-.product-main .old-price{font-size: 13px;text-decoration: line-through;opacity: 0.8;}
+
 .product-main button{margin-left: auto;font-size: 12px;padding: 5px 12px !important;border-radius: 5px;background-color: rgba(118, 239, 96, 0.44);color:  #08b651;transition: all 0.4s ease-in-out;}
 .product-main button svg{font-size: 18px;margin-right: 3px;}
 .product-main button:hover{background-color:#08b651;color: #fff;}

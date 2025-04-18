@@ -7,7 +7,10 @@ import Slider1 from '../../Components/slider/Slider1';
 import CatSlider from '../../Components/CatSlider/Catslider';
 import Banner from '../../Components/banner-3/banner';
 import Product from '../../Components/product/product';
-import img from '../../accets/images/square.jpg'
+import img from '../../accets/images/natur.jpg'
+import TopProducts from './topProducts/TopProducts';
+
+import Footer from '../../Components/footer/footer';
 
 const Home=()=>{
 
@@ -112,6 +115,32 @@ const Home=()=>{
 <br/><br/>
             </div>
         </div>
+
+        {/* Top selling products section */}
+        <section className='topProductSec'>
+            <div className='container-fluid'>
+                <div className='row'>
+                    <div className='col'>
+                        <TopProducts title={'Top Selling'}/>
+                    </div>
+                    <div className='col'>
+                        <TopProducts title={'Trending Products'}/>
+                    </div>
+                    <div className='col'>
+                        <TopProducts title={'Recently Added'}/>
+                    </div>
+                    <div className='col'>
+                        <TopProducts title={'Top Rated'}/>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+       
+
+      
+         
         </>
     )
 }

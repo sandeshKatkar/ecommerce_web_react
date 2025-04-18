@@ -1,0 +1,23 @@
+.listingPage{width: 100%; height: auto;padding: 30px 0;}
+.listingPage .breadCrumb{width: 100%;height: auto;background: #d8f1e5;border-radius: 15px;padding: 10px 40px;}
+.listingPage .breadCrumb h1{font-size: 40px;font-weight: bold;color: #000;opacity: 0.7;}
+.listingPage .breadCrumb ul li{margin-right: 10px !important;}
+.listingPage .breadCrumb ul li a{text-decoration: none;color: #000;font-size: 15px;}
+
+.listingPage .sidebarWrapper{max-width: 20%; flex: 0 0 20%;}
+.listingPage .right-content{max-width: 80%;flex: 0 0 80%;padding: 0 15px;}
+.listingPage .right-content .item{padding: 0px 7px !important;margin-bottom: 10px;}
+/* .right-content-top{width: 100%;} */
+.listingPage .right-content .right-content-top{width:100%;display: flex;justify-content: space-between;}
+.listingPage .right-content .right-content-top p{font-size: 18px;opacity: 0.8;font-weight: 400;margin-bottom: -20px !important;text-align: center;}
+.listingPage .right-content .right-content-top .Dropdowns{display: flex;align-items: center;justify-content: center;padding: 20px 10px 5px 10px;}
+.listingPage .right-content .right-content-top .Dropdowns .showAlldrop,.fetureddrop{position: relative;}
+.listingPage .right-content .right-content-top .Dropdowns button{font-size: 16px; outline: 1px solid #686767;padding: 5px 20px;margin-left: 10px;}
+.listingPage .right-content .right-content-top .Dropdowns ul{position: absolute; top: 110%;right:0; list-style: none;padding: 0;z-index:100;background: #fff;
+    box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);}
+.listingPage .right-content .right-content-top .Dropdowns ul li{width: 100%;padding: 5px 5px;transition: all 0.5s ease-in-out;}
+.listingPage .right-content .right-content-top .Dropdowns ul li a{text-decoration: none;font-size: 14px;color: #000;font-weight: 300;}
+.listingPage .right-content .right-content-top .Dropdowns .showalllist{width: 125px !important;text-align: center;}
+.listingPage .right-content .right-content-top .Dropdowns .feturelist{width: 140px !important; text-align:left;}
+.listingPage .right-content .right-content-top .Dropdowns .feturelist li{padding-left: 10px;}
+.listingPage .right-content .right-content-top .Dropdowns ul li:hover{background: #3BB77E;}

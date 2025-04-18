@@ -10,8 +10,8 @@ header{
     /* background-color: rgb(184, 231, 179); */
 }
 header .logo img{
-    width:80px;
-    height: 50px;
+    width:100%;
+    height: 60px;
     border-radius: 5px;
 }
 header .headersearch{
@@ -28,7 +28,7 @@ header .headersearch .selectDrop{
     font-size: 16px;
     font-weight: 500;
     position: relative;
-    /* border: 1px solid black; */
+    z-index: 10000;
     top: -18px;
     
 }
@@ -64,7 +64,7 @@ header .headersearch .search i{
 }
 
 .countryBox{
-    /* border: 1px solid rgb(12, 26, 221); */
+    z-index: 10000;
     height:50px;
     width:150px;
     margin-left: -20px;
