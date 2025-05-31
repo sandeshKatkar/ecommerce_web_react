@@ -15,6 +15,9 @@ const Nav=()=>{
                         <div className='col-sm-7 part-2 d-flex align-items-center position-static'>
                             <nav>
                                 <ul className='list list-inline mb-0'>
+                                <li className='list-inline-item trending'>
+                                        <button><Link to='/listing'>trending</Link></button>
+                                    </li>
                                     <li className='list-inline-item'>
                                         <button><Link to='/'>Home</Link></button>
                                     </li>
@@ -22,7 +25,7 @@ const Nav=()=>{
                                         <button><Link to='/listing'>Shop</Link></button>
                                     </li>
                                     <li className='list-inline-item'>
-                                        <button><Link>Vendor</Link></button>
+                                        <button><Link to='/about'>About</Link></button>
                                     </li>
                                     <li className='list-inline-item position-static'>
                                         <button><Link>Mega Menu<i class="bi bi-caret-down"></i></Link></button>
@@ -67,9 +70,6 @@ const Nav=()=>{
                                             </div>
                                           
                                         </div>
-                                    </li>
-                                    <li className='list-inline-item'>
-                                        <button><Link>Blog</Link></button>
                                     </li>
                                     <li className='list-inline-item'>
                                         <button><Link to={'/'}>Pages <i class="bi bi-caret-down"></i></Link></button>

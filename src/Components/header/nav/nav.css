@@ -97,3 +97,7 @@
     font-size: 20px;
     text-decoration: none;
 }
+
+.nav nav ul .trending{margin-right: 60px !important;position: relative;font-weight: 500;}
+.nav nav ul .trending::after{content: "";position: absolute;width: 1px;height: 35px;background: #000;right: -25px;bottom: 3px;}
+.nav nav ul .trending button a{font-weight: 600;color:rgba(0, 0, 0, 0.7) !important;}

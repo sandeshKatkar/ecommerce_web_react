@@ -1,13 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import Link from '@mui/material/Link'; 
 import '../Listing/listing.css';
 import Sidebar from '../../Components/sidebar/sidebar';
 import Product from '../../Components/product/product'
-
+import { getProduct } from '../../api/getProduct';
 
 const Listing=()=>{
     const [isopenDropDown1,setIsopenDropDown1]=useState(false);
     const [isopenDropDown2,setIsopenDropDown2]=useState(false);
+
+       const [data,setData]=useState([]);
+            useEffect(()=>{
+                getProduct().then((pro)=>setData(pro.products));
+            },[])
     return(
         <>
             <div className='listingPage'>
@@ -63,52 +68,15 @@ const Listing=()=>{
                                 </div>
 
                                 <div className='row product-row'>
-                                    <div className='item'>
-                                        <Product tag={'best'}/>
-                                    </div>
-                                    <div className='item'>
-                                        <Product tag={'best'}/>
-                                    </div>
-                                    <div className='item'>
-                                        <Product tag={'best'}/>
-                                    </div>
-                                    <div className='item'>
-                                        <Product tag={'best'}/>
-                                    </div>
-                                    <div className='item'>
-                                        <Product tag={'best'}/>
-                                    </div>
-                                    <div className='item'>
-                                        <Product tag={'best'}/>
-                                    </div>
-                                    <div className='item'>
-                                        <Product tag={'best'}/>
-                                    </div>
-                                    <div className='item'>
-                                        <Product tag={'best'}/>
-                                    </div>
-                                    <div className='item'>
-                                        <Product tag={'best'}/>
-                                    </div>
-                                    <div className='item'>
-                                        <Product tag={'best'}/>
-                                    </div>
-                                    <div className='item'>
-                                        <Product tag={'best'}/>
-                                    </div>
-                                    <div className='item'>
-                                        <Product tag={'best'}/>
-                                    </div>
-                                    <div className='item'>
-                                        <Product tag={'best'}/>
-                                    </div>
-                                    <div className='item'>
-                                        <Product tag={'best'}/>
-                                    </div>
-                                    <div className='item'>
-                                        <Product tag={'best'}/>
-                                    </div>
-                                   
+                                      {
+                        data.map((value,i)=>{
+                            return(
+                                 <div className='item'>
+                                    <Product key={i} data={value} />
+                                </div>
+                            )
+                        })
+                    }
                                 </div>
 
                             </div>

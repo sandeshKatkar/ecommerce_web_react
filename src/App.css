@@ -11,6 +11,9 @@ button{
 .text-g{
   color: #08b651;
 }
+.text-org{
+  color: orange;
+}
 .g-btn{
   border: none;
   background-color:#3bb77e;

@@ -1,0 +1,46 @@
+.cartSec{padding: 30px 30px 40px 30px ;}
+
+.cartSec .p-item{height: 670px;padding: 10px !important;overflow-y: scroll;}
+.cartSec .p-item::-webkit-scrollbar{width: 5px;border-radius: 50%;}
+.cartSec .p-item::-webkit-scrollbar-thumb{background: #aca8a8;border-radius: 5px;}
+.cartSec table{border: 1px solid rgba(0, 0, 0, 0.3);border-radius: 10px;}
+.cartSec table .itemWrapper{width:475px; display: flex;}
+.cartSec table .itemWrapper .cart-info{padding: 10px;width: 80%;}
+.cartSec table .itemWrapper .cart-info h5{font-size: 22px !important;}
+.cartSec table tr{padding:10px !important;border: 1px solid rgba(0, 0, 0, 0.2) !important;}
+.cartSec table tr:first-child{border: none !important;}
+.cartSec table tr th{background-color: rgb(209, 200, 200);border: 1px solid rgba(0, 0, 0, 0.2) !important;}
+/* .cartSec table tr th:first-child{border-top-left-radius: 20px;} */
+/* .cartSec table tr th:last-child{border-top-right-radius: 20px;} */
+
+.cartSec table tr td,th{padding:10px !important;}
+.cartSec table tr td p{font-size: 20px;font-weight: bold;color:#3bb77e;}
+.cartSec table tr td input{width: 60px;font-size: 20px;padding: 10px;}
+.cartSec table .img{padding: 2px;border:1px solid rgba(0, 0, 0, 0.2);margin-left: 5px;width: 30%;margin-right: 10px;}
+.cartSec table .img img{width: 100%;}
+
+
+.cartSec .shipping{border: 1px solid rgba(0, 0, 0, 0.3);padding: 15px;}
+.cartSec .shipping .Dropdown{display: flex;align-items: center;justify-content: space-between;padding: 0px 10px 5px 10px;width: 390px !important;position: static;}
+.cartSec .shipping .Dropdown .countrydrop{position: relative;}
+.cartSec .shipping .Dropdown button{font-size: 16px; outline: 1px solid #686767;padding: 5px 50px;margin-left: 10px;}
+.cartSec .shipping .Dropdown ul{position: absolute; top: 110%;right:0; list-style: none;padding: 0;z-index:100;background: #fff;
+box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);}
+.cartSec .shipping .Dropdown ul li{width: 100%;padding: 5px 5px;transition: all 0.5s ease-in-out;}
+.cartSec .shipping .Dropdown ul li a{text-decoration: none;font-size: 14px;color: #000;font-weight: 300;}
+.cartSec .shipping .Dropdown .showalllist{width: 125px !important;text-align: center;}
+.cartSec .shipping .Dropdown .feturelist{width: 140px !important; text-align:left;}
+.cartSec .shipping .Dropdown .feturelist li{padding-left: 10px;}
+.cartSec .shipping .Dropdown ul li:hover{background: #3BB77E;}
+.cartSec .shipping input{width: 100%;}
+
+.cartSec .coupon{border: 1px solid rgba(0, 0, 0, 0.3);padding: 15px;}
+.cartSec .coupon button{font-size: 18px;padding: 5px 35px;background-color: #3bb77e;margin-left: 20px;color: #fff;border-radius: 5px;}
+.cartSec .coupon input{font-size: 18px;padding: 2px;}
+
+.cartSec .checkout{border: 1px solid rgba(0, 0, 0, 0.3);padding: 15px;}
+.cartSec .checkout .part{border: 1px solid rgba(0, 0, 0, 0.3);padding: 15px;display: flex;align-items: center;justify-content: space-between;margin-top: 5px;}
+.cartSec .checkout .part:last-child{padding: 0px 0px !important;}
+.cartSec .checkout .part p{font-size: 20px;margin-bottom: 0 !important;font-weight: 600;}
+.cartSec .checkout .part .p1{font-size: 16px !important;margin-bottom: 0 !important;font-weight: 500 !important;opacity: 0.7;}
+.cartSec .checkout .part button{width: 100%;padding: 10px;font-size: 18px;background: #3BB77E;color: #fff;font-weight: 600;}

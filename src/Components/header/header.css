@@ -105,6 +105,7 @@ header .headersearch .search i{
     left:14px;
     text-align: center;
 }
+.hlist .hlist-ul .hlist-li a{color: black;text-decoration: none;}
 
 .Ac-dropDown{
     position: absolute;

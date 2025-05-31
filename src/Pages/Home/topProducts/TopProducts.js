@@ -1,6 +1,6 @@
 import React from 'react';
 import '../topProducts/TopProducts.css';
-import img from '../../../accets/images/png.png';
+import img from '../../../accets/images/product-img/p1-sm-1.webp';
 import { Link } from '@mui/material';
 import Rating from '@mui/material/Rating';
 

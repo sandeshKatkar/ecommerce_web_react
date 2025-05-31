@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState,useEffect } from 'react';
 import '../Home/index.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -9,8 +9,8 @@ import Banner from '../../Components/banner-3/banner';
 import Product from '../../Components/product/product';
 import img from '../../accets/images/natur.jpg'
 import TopProducts from './topProducts/TopProducts';
+import { getProduct } from '../../api/getProduct';
 
-import Footer from '../../Components/footer/footer';
 
 const Home=()=>{
 
@@ -23,7 +23,14 @@ const Home=()=>{
         fade:false,
         arrow:true
       };
-    
+
+
+      const [data,setData]=useState([]);
+        useEffect(()=>{
+            getProduct().then((pro)=>setData(pro.products));
+        },[])
+      
+    //  data.map((v)=>console.log(data.title))
     return(
         <>
         <Slider1/>
@@ -33,6 +40,8 @@ const Home=()=>{
         <div className='homeProducts'>
             <div className='container-fluid'>
                 <div className='d-flex align-item-center filter-tab'>
+                   
+                    
                     <h2 className='hd mb-0 mt-0 heading'>Popular Products</h2>
                     <ul className='list list-inline' style={{marginLeft:'auto'}}>
                         <li className='list-inline-item'><a className='cursor'>All</a></li>
@@ -44,37 +53,16 @@ const Home=()=>{
                     </ul>
                 </div>
 
-                <div className='row product-row'>
-                    <div className='item'>
-                        <Product tag={'best'}/>
-                    </div>
-                    <div className='item'>
-                        <Product tag={'New'}/>
-                    </div>
-                    <div className='item'>
-                        <Product tag={'hot'}/>
-                    </div>
-                    <div className='item'>
-                        <Product tag={'sale'}/>
-                    </div>
-                    <div className='item'>
-                        <Product tag={'best'}/>
-                    </div>
-                    <div className='item'>
-                        <Product tag={'hot'}/>
-                    </div>
-                    <div className='item'>
-                        <Product tag={'sale'}/>
-                    </div>
-                    <div className='item'>
-                        <Product tag={'hot'}/>
-                    </div>
-                    <div className='item'>
-                        <Product tag={'New'}/>
-                    </div>
-                    <div className='item'>
-                        <Product tag={'sale'}/>
-                    </div>
+                <div className='row product-row' style={{flexWrap:'wrap'}}>
+                    {
+                        data.map((value,i)=>{
+                            return(
+                                <div className='item'>
+                                    <Product key={i} data={value} />
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             
             
@@ -102,12 +90,16 @@ const Home=()=>{
                     <div className='col-md-3 banner'><img src={img} style={{width:'100%'}}/></div>
                     <div className='col-md-9 slider-section'>
                         <Slider {...settings} className='pro-slider'>
-                           <div className='item'> <Product tag={'New'}/></div>
-                           <div className='item'> <Product tag={'best'}/></div>
-                           <div className='item'> <Product tag={'hot'}/></div>
-                           <div className='item'> <Product tag={'New'}/></div>
-                           <div className='item'> <Product tag={'sale'}/></div>
-                           <div className='item'> <Product tag={'hot'}/></div>
+                           
+                            {
+                        data.map((value,i)=>{
+                            return(
+                                 <div className='item'>
+                                    <Product key={i} data={value} />
+                                </div>
+                            )
+                        })
+                    }
                            
                         </Slider>
                     </div>

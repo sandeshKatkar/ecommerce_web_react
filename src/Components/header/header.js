@@ -4,6 +4,7 @@ import '../header/header.css';
 import Select from '../Dropdown/select';
 import logo from "../../accets/images/FOODAC.png";
 import Nav from './nav/nav';
+import { Link } from 'react-router-dom';
 
 const Header=()=>{
    
@@ -45,7 +46,7 @@ const [isopenDropDown,setIsopenDropDown]=useState(false);
                                     <ul className='list list-inline mb-0 hlist-ul'>
                                         <li className='list-inline-item hlist-li'><span><i class="bi bi-recycle"></i><span className='badge bg-success rounded-circle'><p className='text-center'>3</p></span>Compare</span></li>
                                         <li className='list-inline-item hlist-li'><span><i class="bi bi-heart"></i><span className='badge bg-success rounded-circle'><p className='text-center'>3</p></span>Wishlist</span></li>
-                                        <li className='list-inline-item hlist-li'><span><i class="bi bi-cart4"></i><span className='badge bg-success rounded-circle'><p className='text-center'>3</p></span>Cart</span></li>
+                                        <li className='list-inline-item hlist-li'><Link to={'/cart'}><span><i class="bi bi-cart4"></i><span className='badge bg-success rounded-circle'><p className='text-center'>3</p></span>Cart</span></Link></li>
                                         <li className='list-inline-item hlist-li' onClick={()=>setIsopenDropDown(!isopenDropDown)}>
                                             <span><i class="bi bi-person"></i>Account</span>
                                             {
