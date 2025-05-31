@@ -46,7 +46,7 @@ const Home=()=>{
                     <ul className='list list-inline' style={{marginLeft:'auto'}}>
                         <li className='list-inline-item'><a className='cursor'>All</a></li>
                         <li className='list-inline-item'><a className='cursor'>Milk & Dairies</a></li>
-                        <li className='list-inline-item'><a className='cursor'>Cofees & Teas</a></li>
+                        <li className='list-inline-item'><a className='cursor'>Cofees & Tea</a></li>
                         <li className='list-inline-item'><a className='cursor'>Pet Foods</a></li>
                         <li className='list-inline-item'><a className='cursor'>Meats</a></li>
                         <li className='list-inline-item'><a className='cursor'>Vegetables</a></li>

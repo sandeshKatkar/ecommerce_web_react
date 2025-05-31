@@ -17,7 +17,7 @@ import About from './Pages/about/about';
 function App() {
   return (
     <>
-    
+   
     <BrowserRouter>
       <Header/>
       <Routes>
@@ -26,6 +26,7 @@ function App() {
         <Route exact={true} path='/pdetails' element={<PDetails/>}></Route>
         <Route exact={true} path='/cart' element={<Cart/>}></Route>
         <Route exact={true} path='/about' element={<About/>}></Route>
+        
         
       </Routes>
       <Footer/>
